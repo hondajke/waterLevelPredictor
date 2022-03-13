@@ -32,11 +32,18 @@
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
+     <string>Model</string>
+    </property>
+    <addaction name="actionPredict"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_2">
+    <property name="title">
      <string>Help</string>
     </property>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuHelp"/>
+   <addaction name="menuHelp_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionSelect_Data">
@@ -47,6 +54,11 @@
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionPredict">
+   <property name="text">
+    <string>Predict</string>
    </property>
   </action>
  </widget>
