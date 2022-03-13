@@ -20,7 +20,7 @@ from fedot.core.repository.dataset_types import DataTypesEnum
 from fedot.core.repository.tasks import Task, TaskTypesEnum, TsForecastingParams
 
 # Read the file
-df = pd.read_csv('/content/data.csv')
+df = pd.read_csv('data.csv')
 df['data'] = pd.to_datetime(df['data'], format='%d-%m-%Y')
 act_data = df[:730]
 plt.plot(act_data['data'], act_data['water_level'])
